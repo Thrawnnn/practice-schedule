@@ -11,24 +11,20 @@
         src: url(Montserrat-Medium.ttf);
       }
 
-        html {
+        html, body {
             font-family: mont;
-            height: 100vh;
-            width: 100vh;
-            overflow: scroll;
-            background-repeat: no-repeat;
-            background-image: radial-gradient(ellipse at top, #080e21 0%, #1b2735 95%);
+            height: 100%;
+            margin: 0; /* Remove default margin */
+            overflow: hidden; /* Remove scrollbars */
         }
-
+        
         body {
-            font-family: mont;
-            height: 100vh;
-            width: 100vh;
-            overflow: visible;
             background-repeat: no-repeat;
             background-image: radial-gradient(ellipse at top, #080e21 0%, #1b2735 95%);
+            background-size: cover; /* Ensure the background covers the viewport */
+            background-attachment: fixed; /* Keep the background fixed while scrolling */
         }
-
+        
         .meteor-1 {
             position: absolute;
             top: 275px;
