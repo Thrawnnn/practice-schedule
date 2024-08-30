@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,22 +12,29 @@
         src: url(Montserrat-Medium.ttf);
       }
 
-        html, body {
-          height: 100%;
-          margin: 0;
-          padding: 0;
-      	}
+        html {
+            font-family: mont;
+            height: 100%;
+            margin-right: 10%;
+            padding-left: 10%;
+            padding-bottom: 5%;
+            margin-top: 5%;
+            overflow: scroll;
+        }
 
         body {
             font-family: mont;
+            height: 100%;
+            margin: 0;
+            overflow: visible;
+        }
+        
+        body {
             background-repeat: no-repeat;
             background-image: radial-gradient(ellipse at top, #080e21 0%, #1b2735 95%);
             background-size: cover;
-
-            overflow: scroll; /* Hide scrollbars if not needed */
             background-attachment: fixed;
-            padding: 10% 10% 5% 10%; /* Adjust padding to add buffer */
-        }   
+        }
         
         h1 {
             text-align: center;
@@ -41,7 +49,8 @@
         }
 
         table {
-            border-collapse: collapse;
+            border-style: solid;
+            border-radius: 10px;
             margin: 0.5rem auto;
             background-color: #ffffff;
             border: 1px solid rgba(90, 214, 255, 0.911);
@@ -50,18 +59,33 @@
  
         th,
         td {
-            border: 1px solid #9a9ea1;
-            padding: 10px;
-            text-align: center;
+          border-radius: 10px;
+          border-collapse: collapse;
+          padding: 10px;
+          background-color: #f0f0f0;
+          text-align: center;
+          transition: all 0.5s;
+        }
+        
+      th:hover,
+        td:hover {
+          border-radius: 10px;
+          border-collapse: collapse;
+          padding: 10px;
+          transform: scale(1.2); 
+          text-align: center;
+          filter: drop-shadow(5px 5px 10px #000000);
         }
  
         th {
+          border-radius: 10px;
             background-color: #f2f2f2;
-            color: #343a40;
+            color: #ffffff;
         }
  
         .highlight {
-            background-color: #f8f9fa;
+          border-radius: 10px;
+            background-color: #d8d8d8;
         }
  
         .special {
@@ -90,12 +114,12 @@
         <tr>
             <td class="highlight"><b>Wednesday</b></td>
             <td>Drill (EX)</td>
-            <td colspan="3" >Cyber Patriot</td>
+            <td class="highlight" colspan="3" >Cyber Patriot</td>
         </tr>
         <tr>
             <td class="highlight"><b>Thursday</b></td>
-            <td colspan="2">Drill (EX)</td>
-            <td class="highlight" colspan="2">Raider/PT</td>
+            <td class="highlight" colspan="1">Drill (EX)</td>
+            <td colspan="2">Raider/PT</td>
         </tr>
         <tr>
             <td class="highlight"><b>Friday</b></td>
@@ -109,7 +133,7 @@
     <table>
         <tr>
             <td class="highlight"><b>Monday</b></td>
-            <td colspan="3">Marksmanship</td>
+            <td class="highlight" colspan="3">Marksmanship</td>
         </tr>
         <tr>
             <td class="highlight"><b>Tuesday</b></td>
@@ -122,7 +146,7 @@
         </tr>
         <tr>
             <td class="highlight"><b>Thursday</b></td>
-            <td colspan="3">None</td>
+            <td class="highlight" colspan="3">None</td>
         </tr>
         <tr>
             <td class="highlight"><b>Friday</b></td>
@@ -132,3 +156,4 @@
     </div>
 </body>
 </html>
+>
